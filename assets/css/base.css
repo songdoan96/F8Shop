@@ -1,9 +1,15 @@
 :root {
+  /* color */
   --primary-color: #ee4d2d;
   --white-color: #fff;
   --black-color: #000;
   --text-color: #333;
   --border-color: #d3d3d3;
+
+  /* height */
+  --header-height : 120px;
+  --navbar-height : 34px;
+  --header-with-search-height : calc(var(--header-height) - var(--navbar-height)); 
 }
 * {
   box-sizing: inherit;
