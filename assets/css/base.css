@@ -1,6 +1,6 @@
 :root {
   /* color */
-  --primary-color: #C43F25;
+  --primary-color: #F06246;
   --white-color: #fff;
   --black-color: #000;
   --text-color: #333;
@@ -104,7 +104,7 @@ html {
   outline: none;
   cursor: pointer;
   color: var(--text-color);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
@@ -124,4 +124,49 @@ html {
   color: #949494;
   cursor: default;
   background-color: #c3c3c3;
+}
+
+/* Select input */
+.select-input {
+  min-width: 200px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.select-input__label {
+  font-size: 1.4rem;
+}
+.select-input__icon {
+  font-size: 1.4rem;
+  color: rgb(131, 131, 131);
+}
+.select-input__list {
+  position: absolute;
+  top: calc(100% - 8px);
+  right: 0;
+  left: 0;
+  background-color: var(--white-color);
+  border-radius: 2px;
+  list-style: none;
+  padding: 8px 16px;
+  display: none;
+}
+.select-input:hover .select-input__list{
+  display: block;
+}
+
+.select-input__link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  display: block;
+  padding: 4px 0;
+}
+.select-input__link:hover {
+  color: var(--primary-color);
 }
